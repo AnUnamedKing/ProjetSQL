@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+body {
+    background: #000 url('img/board.png') center/cover fixed;
+    margin: 0;
+    font-family: 'Special Elite', serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.95);
+    padding: 10px 40px;
+    border-bottom: 2px solid #3e2723;
+}
+.logo-container {
+    max-width: 175px;
+}
+.main-title-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.nav-input {
+    background: #111;
+    border: 1px solid #3e2723;
+    color: #ff9900;
+    padding: 8px;
+    margin-right: 5px;
+    font-family: inherit;
+    outline: none;
+}
+.btn {
+    padding: 8px 18px;
+    font-family: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid #ff9900;
+}
+.btn-connexion {
+    background: #ff9900;
+    color: #000;
+    font-weight: bold;
+}
+.btn-signin {
+    background: transparent;
+    color: #ff9900;
+}
+.btn:hover {
+    background: #cc7a00;
+    color: #000;
+}
+.table-area {
+    padding: 60px 10%;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 40px;
+}
+.card {
+    background: url('img/card.jpg') center/cover no-repeat;
+    aspect-ratio: 2.5 / 3.8;
+    border: none;
+    box-shadow: 10px 15px 30px rgba(0,0,0,0.8);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    cursor: pointer;
+}
+.card:hover {
+    transform: translateY(-12px) rotate(1deg);
+    box-shadow: 0 20px 40px rgba(255, 102, 0, 0.2);
+}
+.card-contents {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background: transparent;
+}
+.product-slot {
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-img {
+    max-width: 85%;
+    max-height: 90%;
+    filter: sepia(0.3) contrast(1.1);
+}
+.text-slot {
+    text-align: center;
+    color: #1a1510;
+    margin-top: 15px;
+    flex-grow: 1;
+}
+.sql-name {
+    font-size: 1rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+.sql-price {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
